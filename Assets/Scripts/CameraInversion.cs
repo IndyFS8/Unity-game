@@ -13,9 +13,9 @@ public class CameraInversion : MonoBehaviour
 
     public float getAxisCustom(string axisName)
     {
-        if (axisName == "Mouse X")
+        if (axisName == "Horizontal")
         {
-            return -UnityEngine.Input.GetAxis("Mouse X");
+            return -UnityEngine.Input.GetAxis("Horizontal");
         }
         else
             return UnityEngine.Input.GetAxis(axisName);

@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.44657874, g: 0.49641258, b: 0.5748172, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657826, g: 0.49641263, b: 0.57481676, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -698,7 +698,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825442272}
-  m_LocalRotation: {x: 0.0005506592, y: 0.9878257, z: -0.15552442, w: 0.0034975559}
+  m_LocalRotation: {x: 0.00040693764, y: 0.98782855, z: -0.15552485, w: 0.002584697}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -731,44 +731,52 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.127
+      value: 0.131
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.518
+      value: 0.519
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.351
+      value: -0.347
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalRotation.w
-      value: 0.6573693
+      value: 0.6244941
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalRotation.x
-      value: 0.110245265
+      value: 0.22516455
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalRotation.y
-      value: 0.7389817
+      value: 0.7311334
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalRotation.z
-      value: 0.09806987
+      value: 0.15732792
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.x
-      value: 0
+      value: 2.933
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.y
-      value: 96.69
+      value: 99.83
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
-      value: 16.97
+      value: 31.765
       objectReference: {fileID: 0}
+    - target: {fileID: -6016782118641283025, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 767287df7c8dcd04d9beb83fed37642f, type: 2}
+    - target: {fileID: -6016782118641283025, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: b3bdb213c23d5bc499f9b776e56aadfc, type: 2}
     - target: {fileID: 919132149155446097, guid: 62da0a64eb6c3744bad4e17354f7f9ae, type: 3}
       propertyPath: m_Name
       value: Wand
@@ -1035,7 +1043,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.00055065454, y: 0.98782575, z: -0.15552446, w: 0.0034975559}
+  m_LocalRotation: {x: 0.00040693625, y: 0.98782855, z: -0.15552486, w: 0.0025846965}
   m_LocalPosition: {x: 3.5699992, y: 13.88, z: 7.37}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -1139,6 +1147,22 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: -7635826562936255635, guid: 414b4c84075d89c45890cd65126ec06c, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 895d3360d71519d4ab6320a213f7cfd6, type: 2}
+    - target: {fileID: -7635826562936255635, guid: 414b4c84075d89c45890cd65126ec06c, type: 3}
+      propertyPath: m_Materials.Array.data[1]
+      value: 
+      objectReference: {fileID: 2100000, guid: 0303608aa9ee7b6469d2ed28b68f7c80, type: 2}
+    - target: {fileID: -7635826562936255635, guid: 414b4c84075d89c45890cd65126ec06c, type: 3}
+      propertyPath: m_Materials.Array.data[2]
+      value: 
+      objectReference: {fileID: 2100000, guid: ed2848cda90043e41b20c7db0606b71b, type: 2}
+    - target: {fileID: -7635826562936255635, guid: 414b4c84075d89c45890cd65126ec06c, type: 3}
+      propertyPath: m_Materials.Array.data[3]
+      value: 
+      objectReference: {fileID: 2100000, guid: 958cfcbcf0a160641b8b9b2dee275519, type: 2}
     - target: {fileID: 919132149155446097, guid: 414b4c84075d89c45890cd65126ec06c, type: 3}
       propertyPath: m_Name
       value: Kangaroo_01

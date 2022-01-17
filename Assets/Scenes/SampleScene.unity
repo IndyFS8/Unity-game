@@ -305,6 +305,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   magic: {fileID: 1347470487}
+  kangaroo: {fileID: 68120056}
   speed: 20
 --- !u!1 &442152933
 GameObject:

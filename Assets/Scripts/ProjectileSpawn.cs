@@ -21,7 +21,7 @@ public class ProjectileSpawn : MonoBehaviour
         if (Input.GetKeyDown("z"))
         {
 
-            GameObject magicProjectile = Instantiate(magic, transform.position + (transform.right * 2),
+            GameObject magicProjectile = Instantiate(magic, transform.position + (transform.right),
                 Quaternion.identity);
             magicProjectile.transform.eulerAngles = newRotation;
             Rigidbody magicRB = magicProjectile.GetComponent<Rigidbody>();

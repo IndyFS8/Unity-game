@@ -5,7 +5,7 @@ using UnityEngine;
 public class SimpleCharacterController : MonoBehaviour
 {
     [Tooltip("Maximum slope the character can jump on")]
-    [Range(5f, 60f)]
+    [Range(5f, 180f)]
     public float slopeLimit = 45f;
     [Tooltip("Move speed in meters/second")]
     public float moveSpeed = 2f;

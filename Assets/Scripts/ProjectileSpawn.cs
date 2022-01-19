@@ -44,7 +44,7 @@ public class ProjectileSpawn : MonoBehaviour
                     currentRotation.y = kangaroo.transform.eulerAngles.y + i * 60 - 360;
                 }
                 
-                GameObject magicProjectile = Instantiate(magic2, transform.position + (transform.up),
+                GameObject magicProjectile = Instantiate(magic2, transform.position + (transform.up * 2f),
                     Quaternion.identity);
                 currentRotation.x = 0;
                 currentRotation.z = 0;

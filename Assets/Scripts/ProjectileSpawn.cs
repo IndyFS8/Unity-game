@@ -11,7 +11,8 @@ public class ProjectileSpawn : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        Cursor.visible = false;
+        Physics.IgnoreCollision(magic2.GetComponent<Collider>(),kangaroo.GetComponent<Collider>());
     }
 
     // Update is called once per frame

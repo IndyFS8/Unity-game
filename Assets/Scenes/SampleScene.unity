@@ -422,11 +422,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: d36b5684b7d2fc04ba3c84d82006d74d, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  slopeLimit: 90
+  slopeLimit: 180
   moveSpeed: 5
   turnSpeed: 150
   allowJump: 1
-  jumpSpeed: 4
+  jumpSpeed: 11
 --- !u!114 &68120060
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2280,6 +2280,37 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 4708550273763106, guid: 9a71a833102626b47bcb1a9a15a913dc, type: 3}
   m_PrefabInstance: {fileID: 615688420}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &343330371
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 343330372}
+  m_Layer: 0
+  m_Name: Gorillas
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &343330372
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 343330371}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: -3.659041, y: 71.85803, z: -44.769047}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 1493490263}
+  m_Father: {fileID: 0}
+  m_RootOrder: 7
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &344361096
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -4350,8 +4381,8 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.6376171, g: 0.4440726, b: 0.7924528, a: 1}
-  m_Intensity: 1
+  m_Color: {r: 0.4144542, g: 0.35585618, b: 0.5283019, a: 1}
+  m_Intensity: 1.5
   m_Range: 10
   m_SpotAngle: 30
   m_InnerSpotAngle: 21.80208
@@ -4953,7 +4984,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825442272}
-  m_LocalRotation: {x: 0.1314069, y: -0.002147279, z: 0.0002846362, w: 0.99132615}
+  m_LocalRotation: {x: 0.13140687, y: -0.0021839913, z: 0.00028950258, w: 0.9913261}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -6015,8 +6046,8 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.1314069, y: -0.002147279, z: 0.00028463383, w: 0.99132615}
-  m_LocalPosition: {x: -102.8, y: 53.6, z: -129.8}
+  m_LocalRotation: {x: 0.13140686, y: -0.0021839913, z: 0.00028950316, w: 0.9913261}
+  m_LocalPosition: {x: -59.8, y: 53.6, z: -129.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
   m_Father: {fileID: 0}
@@ -8496,7 +8527,7 @@ Transform:
   m_GameObject: {fileID: 1367939458}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: 0, y: 1, z: 0}
-  m_LocalScale: {x: 0.6, y: 2, z: 0.6}
+  m_LocalScale: {x: 1, y: 2, z: 2}
   m_Children: []
   m_Father: {fileID: 1493490263}
   m_RootOrder: 0
@@ -9287,7 +9318,7 @@ GameObject:
   - component: {fileID: 1493490260}
   - component: {fileID: 1493490259}
   m_Layer: 0
-  m_Name: Enemy
+  m_Name: PlainsGorilla
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -9305,7 +9336,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a42027b02a53ad64f86da32ee7084dd5, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  lookRadius: 20
+  lookRadius: 10
 --- !u!54 &1493490260
 Rigidbody:
   m_ObjectHideFlags: 0
@@ -9332,7 +9363,7 @@ NavMeshAgent:
   m_Enabled: 1
   m_AgentTypeID: 0
   m_Radius: 0.2
-  m_Speed: 3.5
+  m_Speed: 2
   m_Acceleration: 20
   avoidancePriority: 50
   m_AngularSpeed: 120
@@ -9365,14 +9396,14 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1493490258}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -77.66633, y: 37.79, z: -96.7513}
+  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalPosition: {x: -74.007286, y: -34.06803, z: -51.98225}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 1367939459}
   - {fileID: 587315803}
-  m_Father: {fileID: 0}
-  m_RootOrder: 7
+  m_Father: {fileID: 343330372}
+  m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1497254120 stripped
 Transform:
@@ -9794,7 +9825,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 414b4c84075d89c45890cd65126ec06c, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -102.8
+      value: -59.8
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 414b4c84075d89c45890cd65126ec06c, type: 3}
       propertyPath: m_LocalPosition.y
@@ -10611,7 +10642,7 @@ MonoBehaviour:
         m_Calls: []
   m_LegacyBlendHint: 0
   m_YAxis:
-    Value: 2
+    Value: 4
     m_SpeedMode: 0
     m_MaxSpeed: 4
     m_AccelTime: 0.2
@@ -10659,7 +10690,7 @@ MonoBehaviour:
   m_RecenterToTargetHeading:
     m_enabled: 1
     m_WaitTime: 0.2
-    m_RecenteringTime: 0.5
+    m_RecenteringTime: 0.3
     m_LegacyHeadingDefinition: -1
     m_LegacyVelocityFilterStrength: -1
   m_BindingMode: 4
@@ -10684,7 +10715,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1721029812}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: -102.8, y: 53.6, z: -129.8}
+  m_LocalPosition: {x: -59.8, y: 53.6, z: -129.8}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
   - {fileID: 825442274}
@@ -10732,7 +10763,7 @@ MonoBehaviour:
   m_GameObject: {fileID: 1721029812}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: d30a5c4acca3ef2439b2c29ebde477be, type: 3}
+  m_Script: {fileID: 11500000, guid: 4456a2b45381a8249938f13a28108169, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
 --- !u!1001 &1738103365
@@ -10866,7 +10897,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1753469467}
-  m_LocalRotation: {x: 0.21201201, y: -1e-45, z: -0, w: 0.9772671}
+  m_LocalRotation: {x: 0.212012, y: -1e-45, z: -0, w: 0.9772671}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:

@@ -15,7 +15,7 @@ public class CameraLook : MonoBehaviour
     {
         if (axisName == "Mouse X")
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetKey("c"))
             {
                 return UnityEngine.Input.GetAxis("Mouse X");
             }
@@ -27,7 +27,7 @@ public class CameraLook : MonoBehaviour
         }
         else if (axisName == "Mouse Y")
         {
-            if (Input.GetMouseButton(1))
+            if (Input.GetKey("c"))
             {
                 return UnityEngine.Input.GetAxis("Mouse Y");
             }

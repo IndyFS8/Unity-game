@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Security.Cryptography;
 using UnityEngine;
 
 public class DeadGorilla : MonoBehaviour
 {
     public GameObject Gorilla;
     public float health;
+    public GameObject Kangaroo;
 
 
     void start()
@@ -27,12 +29,24 @@ public class DeadGorilla : MonoBehaviour
                 Death();
             }
 
-        }
+        }  
+        if (col.gameObject.CompareTag("Player"))
+        {
+            // add taking dmg animatio
+            KangyDeath();
+
+        } 
+        
     }
 
     public void Death()
     {
         Destroy(Gorilla);
         
+    }
+
+    public void KangyDeath()
+    {
+        Destroy(Kangaroo);
     }
 }

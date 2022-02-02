@@ -3,8 +3,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
+
 public class Teleporter : MonoBehaviour
 {
+    public float x;
+    public float y;
+    public float z;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,7 +23,7 @@ public class Teleporter : MonoBehaviour
 
     private void OnTriggerEnter(Collider col)
     {
-        col.transform.position = new Vector3(175.56f, 96.036f, -119.64f);
+        col.transform.position = new Vector3(x, y, z);
     }
     
 }

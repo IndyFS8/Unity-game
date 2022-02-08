@@ -19,6 +19,7 @@ public class GameOverScreen : MonoBehaviour
  public void RestartButton()
  {
   SceneManager.LoadScene("SampleScene");
+  Drunkard.GlobalVariables.gwillaKilla = 0;
  }
  
   

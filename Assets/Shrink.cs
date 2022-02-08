@@ -2,11 +2,8 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class DeadGrillaCount : MonoBehaviour
+public class Shrink : MonoBehaviour
 {
-
-    public int deadGorillas = 0;
-    
     // Start is called before the first frame update
     void Start()
     {
@@ -17,5 +14,10 @@ public class DeadGrillaCount : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void shrinkKangaroo()
+    {
+        transform.localScale += new Vector3(2f, 2f, 2f);
     }
 }

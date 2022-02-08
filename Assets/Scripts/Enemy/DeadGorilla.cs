@@ -12,13 +12,11 @@ public class DeadGorilla : MonoBehaviour
     public GameObject Gorilla;
     public float health;
     public GameObject Kangaroo;
-    
     public GameOverScreen GameOverScreen;
-    public int GorillasKilled;
-    
+    private int GorillasKilled;
     public void GameOver()
     {
-        GameOverScreen.Setup(GorillasKilled);
+        GameOverScreen.Setup(Drunkard.GlobalVariables.gwillaKilla);
     }
     
     
@@ -38,18 +36,18 @@ public class DeadGorilla : MonoBehaviour
         {
             health -= 1;
             // add taking dmg animation
-            
-            
+
             if (health < 1)
             {
+                Drunkard.GlobalVariables.gwillaKilla += 1;
+                Debug.Log(Drunkard.GlobalVariables.gwillaKilla);
                 for (int i = 0; i < 6; i++)
                 {
                     var x = rnd.Next(-130, 100);
-                    Debug.Log(rnd.Next(-130,200));
                     var z = rnd.Next(-200, 200);
                     Spawn(x, z);
                     Death();
-                    GorillasKilled++;
+                    
                 }
             }
 
@@ -90,4 +88,5 @@ public class DeadGorilla : MonoBehaviour
         Destroy(Kangaroo);
         
     }
+    
 }

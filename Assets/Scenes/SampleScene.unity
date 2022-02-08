@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 0.854
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 705507994}
-  m_IndirectSpecularColor: {r: 0.058401894, g: 0.0648093, b: 0.28538412, a: 0.854}
+  m_IndirectSpecularColor: {r: 0.05854143, g: 0.064922445, b: 0.28550974, a: 0.854}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -8172,7 +8172,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 825442272}
-  m_LocalRotation: {x: 0.022451935, y: -0.002338631, z: 0.000052520172, w: 0.9997452}
+  m_LocalRotation: {x: 0.022451885, y: -0.0031557737, z: 0.00007087127, w: 0.999743}
   m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children:
@@ -9636,7 +9636,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 963194225}
-  m_LocalRotation: {x: 0.022451928, y: -0.0023386313, z: 0.000052519135, w: 0.9997452}
+  m_LocalRotation: {x: 0.022451887, y: -0.0031557742, z: 0.00007087082, w: 0.999743}
   m_LocalPosition: {x: -98.29, y: 38.4, z: -113.86}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_Children: []
@@ -15328,7 +15328,6 @@ MonoBehaviour:
   health: 3
   Kangaroo: {fileID: 68120056}
   GameOverScreen: {fileID: 1086313744}
-  GorillasKilled: 0
 --- !u!111 &1493490266
 Animation:
   m_ObjectHideFlags: 0
